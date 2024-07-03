@@ -25,13 +25,16 @@ The objective of this project is to create a functional Tic-Tac-Toe game that ca
 <h3 align="left">📚 What I've learned</h3>
 
 I've acquired a lot of basic knowledge with :
+
 <h4 align="left">JavaScript</h4>
+
 - **Module Pattern and IIFE**: Encapsulating game logic within modules to avoid global scope pollution.
 - **DOM Manipulation**: Dynamically creating and updating HTML elements based on user interactions.
 - **Event Handling**: Attaching event listeners to handle user inputs and game actions.
 - **Game Logic**: Implementing algorithms to handle player moves, determine win conditions, and switch turns.
 - **Closures**: Using closures to manage the game state and player information.
 <h4 align="left">HTML & CSS</h4>
+
 - **HTML5**: Structuring the game layout with semantic HTML tags.
 - **CSS Grid & Flexbox**: Creating a responsive layout for the game board and UI elements.
 - **Styling**: Enhancing the visual appearance with custom styles and animations.
