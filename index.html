@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="script.js" defer></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<style>@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');</style>
+	<title>Tic Tac Toe</title>
+</head>
+<body>
+	<header class="title">
+		<h1>TIC TAC TOE</h1>
+	</header>
+	
+	<div class="content">
+		<div class="infos">
+			<form id="players">
+				<div>
+					<input type="text" name1="name1" id="name1" placeholder="Player1" required>
+				</div>
+				<div>
+					<input type="text" name2="name2" id="name2" placeholder="Player2" required>
+				</div>
+				<div>
+					<button type="submit" class="confirmBtn" >Confirm</button>
+				</div>
+			</form>
+			<div class="activeP"></div>
+		</div>
+		<div class="grid no-click">
+			<div class="line">
+				<div class="box" id="0"></div>
+				<div class="box" id="1"></div>
+				<div class="box" id="2"></div>
+			</div>
+			<div class="line">
+				<div class="box" id="3"></div>
+				<div class="box" id="4"></div>
+				<div class="box" id="5"></div>
+			</div>
+			<div class="line">
+				<div class="box" id="6"></div>
+				<div class="box" id="7"></div>
+				<div class="box" id="8"></div>
+			</div>
+		</div>
+		<div class="bottom">
+			<button id="new">Reset Game</button>
+		</div>
+	</div>
+		
+	<footer>
+		<p class="credits">Copyright © 
+			<script>document.write(new Date().getFullYear())</script>
+			- LaOuede 
+			<a href="https://github.com/LaOuede" target="_blank"><i class="fab fa-github"></i></a>
+		</p>
+		<p class="odin">The Odin Project</p>
+	</footer>
+
+	</body>
+</html>

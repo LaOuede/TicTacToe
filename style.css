@@ -1,0 +1,168 @@
+:root {
+	--primary: black;
+	--pink: rgb(255, 17, 120);
+	--light-blue: rgb(1, 255, 244);
+	--border-radius: 8px;
+	--shadow: rgb(1, 255, 244) 2px 2px 4px;
+	--shadowBtn: pink 2px 2px 4px;
+	font-family: Orbitron, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	display: grid;
+	grid-template: 1.5fr 9fr 1fr / 1fr;
+	background-color: var(--primary);
+}
+
+header {
+	background-color: var(--primary);
+	font-size: larger;
+	text-align: center;
+	color: var(--light-blue);
+	text-shadow: var(--shadow);
+}
+
+.content {
+	display: grid;
+	justify-items: center;
+	grid-template: 1fr 1fr 5fr 1fr, 1fr;
+}
+
+.infos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: var(--light-blue);
+}
+
+input::placeholder {
+	font-style: italic;
+	font-size: 0.8rem;
+	opacity: 1;
+	font-family: Orbitron, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: var(--primary);
+}
+
+input {
+	background-color: var(--light-blue);
+	border-color: var(--light-blue);
+	margin-bottom: 5px;
+}
+
+.winner-announcement {
+	position: absolute;
+	top: 53%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.9);
+	color: var(--light-blue);
+	padding: 20px;
+	border-radius: var(--border-radius);
+	font-size: 1.5rem;
+	text-align: center;
+	box-shadow: var(--shadow);
+	z-index: 100;
+}
+
+.grid {
+	width: 45vh;
+	height: 45vh;
+	display: grid;
+	grid-template: 3fr, 1fr;
+	grid-template-rows: repeat(auto-fit, minmax(150px, 1fr)); 
+}
+
+.line {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+}
+
+.box {
+	position: relative;
+	border-radius: var(--border-radius);
+	width: 90%;
+	height: 90%;
+	font-size: 4rem;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: rgb(1, 255, 244);
+	background: var(--primary);
+}
+
+.box::before {
+	content: "";
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	right: -5px;
+	bottom: -5px;
+	background: linear-gradient(to right, rgb(1, 255, 244), rgb(255, 17, 120));
+	border-radius: var(--border-radius);
+	z-index: -100;
+}
+
+.box:hover {
+	cursor: pointer;
+	background-color: rgb(255, 17, 120, 0.5);
+}
+
+.no-click {
+	pointer-events: none;
+}
+
+button {
+	font-weight: bold;
+	border-radius: var(--border-radius);
+	border: none;
+	padding: 1em 2em 1em 2em;
+	background-color: var(--pink);
+	font-family: Orbitron, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	cursor: pointer;
+	box-shadow: var(--shadowBtn);
+	z-index: 1002;
+	position: relative;
+	margin-top: 5px;
+}
+
+footer {
+	text-align: center;
+	background-color: var(--primary);
+	color: var(--light-blue);
+	text-shadow: var(--shadow);
+}
+
+.fa-github {
+	color: var(--light-blue);
+	font-size: 24px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+	transform: rotate(360deg) scale(1.2);
+}
+
+.orbitron {
+	font-family: "Orbitron", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@keyframes blink {
+	50% {
+		opacity: 0;
+	}
+}
+
+.blink {
+	animation: blink 1.5s linear infinite;
+}
