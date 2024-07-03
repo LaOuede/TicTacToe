@@ -42,7 +42,8 @@ I've acquired a lot of basic knowledge with :
 ---
 
 <h3 align="left">🖥 Display</h3>
-<img width="888" alt="Capture d’écran, le 2024-06-24 à 14 25 13" src="https://github.com/LaOuede/Sign-up-Form/assets/114024436/6d24b6e2-b11c-4534-8cf3-5b816d53462c">
+<img width="708" alt="Capture d’écran, le 2024-07-03 à 18 53 24" src="https://github.com/LaOuede/TicTacToe/assets/114024436/0b47a5d8-7227-473c-86e3-9d4ad0109e21">
+
 
 ---
 
